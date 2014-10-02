@@ -11,6 +11,11 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 RUN apt-get update
 RUN apt-get upgrade -y
 
+RUN apt-get -y install dpkg-dev
+RUN apt-get -y install gcc
+RUN apt-get -y install g++
+RUN apt-get -y install libc-dev
+RUN apt-get -y install libc6-dev
 RUN apt-get -y install build-essential wget
 RUN apt-get -y install openssl libssl-dev
 
